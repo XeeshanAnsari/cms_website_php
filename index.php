@@ -9,13 +9,15 @@
 
    <table id="mainTable" >
     <!-- Title of website -->
-     <tr class"title" >
-       <td class="title" ><h1>Welcome to CMS website<h1></td>
+     <tr  >
+       <td><?php include("includes/header.php"); ?></td>
      </tr>
      
-      <!-- navigation bar  of website -->
+      <!-- navigation bar  start -->
      <tr>
-       <td></td>
+       <td>     
+       
+       </td>
      </tr>
      
       <!-- content of website -->

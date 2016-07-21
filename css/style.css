@@ -8,8 +8,12 @@
              width: 80%;
              margin: 2% 10% 0% 10%; 
  }            
+ #titleTable{
+             width: 100%;
+             
+ } 
  .title{
              width: 100%;
              background-color: lightskyblue;
              text-align: center;
- }            
+ }           
