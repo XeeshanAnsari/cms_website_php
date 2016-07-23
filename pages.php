@@ -32,9 +32,18 @@
        
       <!-- content of website -->
      <tr>
-       <td id="content" colspan="7">
-       <h2>welcome my website</h2>
-       </td>
+       
+<?php
+    $page =$_GET['page'];
+    $query = "SELECT * FROM pages where p_title='$page'";
+    $run = mysql_query($query);
+    while($row = mysql_fetch_array($run)){
+        echo "<td colspan='7' class='bloggerContect'>" . "<h2>" . $row['p_title'] . "</h2>" . $row['p_desc'] . "</td>";
+
+    }
+
+?>       
+      
      </tr>
 
       <!-- footerof website -->
@@ -42,7 +51,7 @@
        <td id="footer" colspan="7">Created by: XeeshanAnsari</td>
      </tr>
 
-     
+      
    
    </table>
 

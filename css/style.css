@@ -26,6 +26,10 @@
      color: white;
      text-decoration: none;
  }
+ #menus a:visited{
+     color: yellow;
+     text-decoration: none;
+ }
  #content{
      background-color: pink;
      height: 500px;
@@ -40,3 +44,23 @@
       width: 100%;
      text-align: center;
  }
+ .bloggerContect{
+     background-color: gray;
+     padding: 40px;
+ }
+ #adminTable{
+       width: 80%;
+       margin: 0% 10% ; 
+ }
+ .adminTitle{
+     width: 100%;
+     height: 100px;
+     background-color: cadetblue;
+     color:black;
+     text-align: center;
+     font-size: 2em;
+
+ }
+.PageTitle{
+    text-align: center;
+}
