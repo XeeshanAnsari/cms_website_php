@@ -38,7 +38,7 @@
     while($row = mysql_fetch_array($run)){
             $p_id = $row['p_id'];
             $p_title = $row[1];
-            $p_desc = $row[2];
+            $p_desc = substr($row[2],0,200);
 
     
 
@@ -46,7 +46,7 @@
           <td><?php echo $p_id;  ?></td>
           <td><?php echo $p_title;  ?></td>
           <td><?php echo $p_desc;  ?></td>
-          <td>Delete</td>
+          <td><a href ='delete_page.php?del_page=<?php echo $p_id ?>'>Delete</a></td>
          
       
           </tr>
