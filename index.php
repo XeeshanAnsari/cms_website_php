@@ -7,27 +7,39 @@
 </head>
 <body>
 
-   <table id="mainTable" >
+   <table class="mainTable" border="2" >
     <!-- Title of website -->
-     <tr  >
-       <td><?php include("includes/header.php"); ?></td>
+     <tr >
+       <td colspan="7"><?php include("includes/header.php"); ?></td>
      </tr>
      
       <!-- navigation bar  start -->
-     <tr>
-       <td>     
        
-       </td>
-     </tr>
-     
+          <tr >
+        
+<?php
+  include("includes/db.php");
+  $query= "SELECT * FROM menus";
+  $run = mysql_query($query);
+  while($row = mysql_fetch_array($run)){
+    $m_title = $row[1];
+    echo "<td id='menus' width='100'><a href='pages.php?page=$m_title'>$m_title</a></td>";
+
+  }
+
+?>    
+          </tr>
+       
       <!-- content of website -->
      <tr>
-       <td></td>
+       <td id="content" colspan="7">
+       <h2>welcome my website</h2>
+       </td>
      </tr>
 
-      <!-- Title of website -->
+      <!-- footerof website -->
      <tr>
-       <td></td>
+       <td id="footer" colspan="7">Created by: XeeshanAnsari</td>
      </tr>
 
       <!-- Title of website -->

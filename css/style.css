@@ -4,16 +4,39 @@
 
  }
  
- #mainTable{
+ .mainTable{
              width: 80%;
-             margin: 2% 10% 0% 10%; 
+             margin: 0% 10% 0% 10%; 
  }            
  #titleTable{
-             width: 100%;
+            width: 100%;
              
  } 
  .title{
              width: 100%;
              background-color: lightskyblue;
              text-align: center;
- }           
+ }  
+ #menus{
+             
+             background-color: darkblue;
+             text-align: center;
+ }         
+#menus a:link{
+     color: white;
+     text-decoration: none;
+ }
+ #content{
+     background-color: pink;
+     height: 500px;
+     width: 100%;
+     text-align: center;
+     padding: 5px;
+     
+ }
+ #footer{
+      background-color: black;
+      color: white;
+      width: 100%;
+     text-align: center;
+ }
