@@ -9,6 +9,7 @@
 <body>
     <div class="adminTitle">
     Welcome to Admin
+    <h2><?php echo @$_GET['deleted'] ; ?></h2>
     </div>
     <h2><a href="admin_panel.php?view_page=view page">View page</a></h2>
     <h2><a href="admin_panel.php?view_menu=view menu">View menu</a></h2>
@@ -51,10 +52,41 @@
       
           </tr>
 <?php  } ?>
-        
-        </table>
       
-<?php } ?>
+<?php  } ?>
+
+
+      </table>
+
+<?php  
+    if(isset($_GET['view_menu'])){
+
+    
+?>     
+
+     <table id="adminTable"border="2">
+        <tr bgcolor='yellow'>
+        <td class="PageTitle" colspan="3"><h2>All Menu Here</h2></td>
+        </tr>
+        <tr>
+          <th>Menu NO: </th>
+          <th>Menu Title: </th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+<?php
+     $query="SELECT * FROM menus";
+     $run = mysql_query($query);
+     while ($row = mysql_fetch_array($run)) {
+         $m_id = $row['m_id'];
+         $m_title = $row['1'];
+?>
+          <td><?php  echo $m_id ; ?></td>
+          <td><?php  echo $m_title ; ?></td>
+        </tr>          
+<?php  } ?>
+<?php  } ?>
+     </table>
 
 </body>
 </html>
