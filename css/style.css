@@ -66,6 +66,10 @@
      margin: 0% 0% 5% 0%;
 
  }
+#insertTable{
+    width: 30%;
+    margin: 0% 35%;
+} 
 .PageTitle{
     text-align: center;
 }
