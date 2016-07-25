@@ -15,7 +15,7 @@
     <h2><?php echo @$_GET['inserted'] ; ?></h2>
     <h2><?php echo @$_GET['logged'] ; ?></h2>
     </div>
-    <h2><a href="login.php">logOut</a></h2>
+    <h2><a href="logout.php">logOut</a></h2>
     <h2><a href="insert_page.php">Insert page</a></h2>
     <h2><a href="admin_panel.php?view_page=view page">View page</a></h2>
     <h2><a href="insert_menu.php">Insert Menu</a></h2>

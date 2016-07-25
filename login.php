@@ -26,7 +26,7 @@
      </table>
   
   </form>
-    
+    <h2><?php  echo @$_GET['logout'] ; ?></h2>
 </body>
 </html>
 
