@@ -20,7 +20,7 @@
 
 
 ?>
-    <table id="adminTable"border="2">
+    <table id="adminPageTable"border="2">
           <tr bgcolor="yellow">
           <td class="PageTitle" colspan="4"><h2>All pages Here</h2></td>
           </tr>
@@ -64,7 +64,7 @@
     
 ?>     
 
-     <table id="adminTable"border="2">
+     <table id="adminMenuTable"border="2">
         <tr bgcolor='yellow'>
         <td class="PageTitle" colspan="3"><h2>All Menu Here</h2></td>
         </tr>
@@ -83,6 +83,7 @@
 ?>
           <td><?php  echo $m_id ; ?></td>
           <td><?php  echo $m_title ; ?></td>
+          <td><a href='delete_menu.php?del_menu=<?php echo $m_id ; ?>'>Delete</a></td>
         </tr>          
 <?php  } ?>
 <?php  } ?>
