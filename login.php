@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +31,7 @@
   
   </form>
     <h2><?php  echo @$_GET['logout'] ; ?></h2>
+    <h2><?php  echo @$_GET['error'] ; ?></h2>
 </body>
 </html>
 
@@ -35,7 +40,7 @@
      include("includes/db.php");
      if(isset($_POST['submit'])){
 
-         $admin_name = $_POST['admin_name'];
+         $admin_name = $_SESSION['admin_name'] = $_POST['admin_name'];
          $admin_pass = $_POST['admin_pass'];
          $query = "SELECT * FROM admin_login where user_name='$admin_name' and user_pass='$admin_pass' ";
          $run =mysql_query($query);

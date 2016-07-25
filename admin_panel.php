@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!$_SESSION['admin_name']){
+    header('location: login.php?error=You are Not an Adminstartor');
+}
+  
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +18,9 @@
 </head>
 <body>
     <div class="adminTitle">
-    Welcome to Admin
+        Welcome to Admin
 
-
+    <p><?php echo "Admin name is " . @$_SESSION['admin_name'] ; ?></p>
     <h2><?php echo @$_GET['deleted'] ; ?></h2>
     <h2><?php echo @$_GET['inserted'] ; ?></h2>
     <h2><?php echo @$_GET['logged'] ; ?></h2>
